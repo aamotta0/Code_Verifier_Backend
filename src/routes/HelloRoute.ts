@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import { HelloController } from '../controller/HelloController';
-import { LogInfo } from '@/utils/logger';
+import { LogInfo } from '../utils/logger';
 
 // Route from express 
 let helloRoute = express.Router();
@@ -20,5 +20,5 @@ helloRoute.route('/')
         return res.send(response);
     })
 
-    
+
 export default helloRoute

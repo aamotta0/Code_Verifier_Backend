@@ -19,8 +19,8 @@ rootRouter.get('/', (req: Request, res: Response) => {
 })
 
 // Redirect to Routers && Controllers
-server.use('/api', rootRouter); // http://localhost:8000/api
-server.use('/api/hello', helloRoute); // http://localhost:8000/api/hello => HelloRoute
+server.use('/', rootRouter); // http://localhost:8000/api
+server.use('/hello', helloRoute); // http://localhost:8000/api/hello => HelloRoute
 // Add more routes to the app
 
 export default server;
