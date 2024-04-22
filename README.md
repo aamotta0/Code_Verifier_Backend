@@ -1,4 +1,4 @@
-# MERN Stack with RESTful API
+# MERN STACK with RESTFUL API
 
 ## Introduction
 
