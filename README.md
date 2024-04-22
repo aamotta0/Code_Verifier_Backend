@@ -32,7 +32,7 @@ Follow these instructions to get the project up and running on your local machin
    ```bash
    git clone https://github.com/aamotta0/Code_Verifier_Backend/
 
-   cd yourrepository
+   cd backend/
 
    npm install
 
