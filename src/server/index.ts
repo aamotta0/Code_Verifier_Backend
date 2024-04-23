@@ -3,7 +3,7 @@ import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 
-// TODO: HTTPS
+//* HTTPS
 
 // Root Routes
 import rootRoutes from '../routes';
@@ -15,7 +15,10 @@ const server: Express = express();
 // FROM this point onover: http://localhost:8000/api/...
 server.use('/api', rootRoutes);
 
-// TODO: Moongose Connection
+// Start Server
+server.use(express.static('public'));
+
+//* Moongose Connection
 
 // Security Config
 server.use(helmet());
